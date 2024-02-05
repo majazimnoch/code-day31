@@ -30,5 +30,5 @@ Listens for a click on the element with the ID `accordionSection.`
 Toggles the "active" class on the element, presumably for accordion functionality.
 
 ## Demo
-<img src="num.png" />
+<img src="num.png" class="readme"/>
 Click <a href="https://melodic-moxie-23f251.netlify.app/"> here </href>.
