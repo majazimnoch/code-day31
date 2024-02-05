@@ -45,6 +45,7 @@ body {
     flex-direction: row;
     max-width: 700px;
     align-items: stretch;
+    padding: 18px 10px;
   }
 }
 
