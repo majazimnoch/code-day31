@@ -13,30 +13,30 @@
           <h1>Calculate Life Path Number</h1>
         </div>
         <div class="input-lottie">
-          <label for="birthdate"><h3 class="lottieH3">Pick your date of birth:</h3></label>
+          <label for="birthdate"
+            ><h3 class="lottieH3">Pick your date of birth:</h3></label
+          >
           <input type="date" id="birthdate" />
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player
-            src="https://lottie.host/b8bc0393-3bb0-44c2-8cdd-b55dd02a163c/EezyPhn6gx.json"
-            background="##FFFFFF"
-            speed="1"
-            style="width: 200px; height: 200px"
-            loop
-            autoplay
-            direction="1"
-            mode="normal"
-          ></lottie-player>
+          <div class="lottie-container">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://lottie.host/b8bc0393-3bb0-44c2-8cdd-b55dd02a163c/EezyPhn6gx.json"
+              background="##FFFFFF"
+              speed="1"
+              style="width: 200px; height: 200px"
+              loop
+              autoplay
+              direction="1"
+              mode="normal"
+            ></lottie-player>
+          </div>
           <button id="calculateBtn">Check your number</button>
           <div id="result"></div>
         </div>
         <div class="accordion-section" id="accordionSection">
           <div class="accordion-div">
             <h3>What Life Path Number and Numerology mean?</h3>
-            <img
-              id="accordionHeader"
-              src="./add.png"
-              alt="plus"
-            />
+            <img id="accordionHeader" src="./add.png" alt="plus" />
           </div>
           <p id="accordionContent">
             Numerology is based on the idea that every number (and letter) has
@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="input-box">
-        <label for="numerologyNumber">What's your Life Path Number?:</label>
+        <label for="numerologyNumber"><h3>What's your Life Path Number?:</h3></label>
         <select id="numerologyNumber">
           <option value="1">1</option>
           <option value="2">2</option>
