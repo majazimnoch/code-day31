@@ -29,6 +29,12 @@ calculateBtn.addEventListener('click', () => {
     const birthDateInput = document.getElementById("birthdate");
     const resultDiv = document.getElementById("result");
     const birthDate = birthDateInput.value;
+
+    if (birthDate.trim() === "") {
+        alert('Please choose a valid date of birth.')
+        return;
+    }
+
     const numerologyNumber = calculateNumerology(birthDate);
     resultDiv.innerHTML = `<h3>Your Numerological Number is: <strong>${numerologyNumber}</strong></h3>`;
 });
@@ -55,3 +61,10 @@ function displayNumerologyInfo(info) {
         <p>${info.description}</p>
     `;
 }
+
+// Add event listener for accordion toggle when clicking on h3
+const accordionSection = document.getElementById('accordionSection');
+
+accordionSection.addEventListener('click', () => {
+    accordionSection.classList.toggle('active');
+});

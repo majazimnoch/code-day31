@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +14,8 @@ body {
     min-height: 100vh;
     font-family: 'Montserrat Alternates', sans-serif;
     color: rgb(63, 52, 57);
+    background-repeat: repeat;
+    background-size: 200% 200%;
 }
 
 .container {
@@ -26,9 +28,11 @@ body {
     padding: 30px 10px;
     gap: 20px;
 
+
     @media  (min-width:1024px) {
         flex-direction: row;
         max-width: 700px;
+        align-items: stretch;
     }
 }
 
@@ -36,18 +40,53 @@ body {
     background-color: rgba(242, 244, 246, 0.832);
     padding: 20px;
     border-radius: 10px;
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    @media  (min-width:1024px) {
+        
+    }
 }
 
 .input-box {
     background-color: rgba(240, 248, 255, 0.502);
     padding: 20px;
     border-radius: 10px;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    min-width: 40%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    @media  (min-width:1024px) {
+       
+    }
 }
 
 h1 {
     font-size: 50px;
+}
+
+
+#accordionContent {
+    display: none;
+}
+
+#accordionHeader {
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+#accordionSection p {
+    display: none;
+}
+
+#accordionSection.active p {
+    display: block;
 }
