@@ -10,24 +10,47 @@
     <div class="container">
       <div class="text-box">
         <h1>Count your Number in Numerology</h1>
-        <h3>What's your Life Path Number?</h3>
+        <div class="accordion-section">
+          <h3>What Life Path Number and Numerology mean?</h3>
+          <p>Numerology is based on the idea that every number (and letter) has its own unique energetic vibration. Numerology studies the way these vibrations influence the story of your life and personality. So when you figure out your life path number you can start to uncover your destiny and the life lessons you will face along the way.</p>
+        </div>
+        <div>
+          <label for="birthdate"><h3>Choose your date of birth:</h3></label>
+          <input type="date" id="birthdate" />
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://lottie.host/b8bc0393-3bb0-44c2-8cdd-b55dd02a163c/EezyPhn6gx.json"
+            background="##FFFFFF"
+            speed="1"
+            style="width: 200px; height: 200px"
+            loop
+            autoplay
+            direction="1"
+            mode="normal"
+          ></lottie-player>
+          <button id="calculateBtn">Check your number</button>
+          <div id="result"></div>
+        </div>
       </div>
       <div class="input-box">
-        <label for="birthdate">Choose your date of birth:</label>
-        <input type="date" id="birthdate" />
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player
-          src="https://lottie.host/b8bc0393-3bb0-44c2-8cdd-b55dd02a163c/EezyPhn6gx.json"
-          background="##FFFFFF"
-          speed="1"
-          style="width: 200px; height: 200px"
-          loop
-          autoplay
-          direction="1"
-          mode="normal"
-        ></lottie-player>
-        <button id="calculateBtn">Check your number</button>
-        <div id="result"></div>
+        <label for="numerologyNumber">What's your numerology number:</label>
+        <select id="numerologyNumber">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="11">11</option>
+          <option value="22">22</option>
+          <option value="33">33</option>
+          <option value="44">44</option>
+        </select>
+        <button id="displayInfoBtn">Display Info</button>
+        <div id="infoDisplay"></div>
       </div>
     </div>
     <script src="script.js"></script>

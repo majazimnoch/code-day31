@@ -32,3 +32,26 @@ calculateBtn.addEventListener('click', () => {
     const numerologyNumber = calculateNumerology(birthDate);
     resultDiv.innerHTML = `<h3>Your Numerological Number is: <strong>${numerologyNumber}</strong></h3>`;
 });
+
+document.getElementById('displayInfoBtn').addEventListener('click', function () {
+    // Get the selected numerology number
+    const selectedNumber = document.getElementById('numerologyNumber').value;
+
+    // Fetch the information from the JSON file
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            // Display the information based on the selected number
+            displayNumerologyInfo(data[selectedNumber]);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+});
+
+// Function to display numerology information
+function displayNumerologyInfo(info) {
+    const infoDisplay = document.getElementById('infoDisplay');
+    infoDisplay.innerHTML = `
+        <h3>${info.nick}</h3>
+        <p>${info.description}</p>
+    `;
+}
