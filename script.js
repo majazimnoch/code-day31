@@ -36,7 +36,7 @@ calculateBtn.addEventListener("click", () => {
   }
 
   const numerologyNumber = calculateNumerology(birthDate);
-  resultDiv.innerHTML = `<h3>Your Numerological Number is: <strong>${numerologyNumber}</strong></h3>`;
+  resultDiv.innerHTML = `<h3>Your Number is: <strong>${numerologyNumber}</strong></h3>`;
 });
 
 document
