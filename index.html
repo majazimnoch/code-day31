@@ -10,10 +10,10 @@
     <div class="container">
       <div class="text-box">
         <div class="group">
-          <h1>Count your Number in Numerology</h1>
+          <h1>Calculate Life Path Number</h1>
         </div>
-        <div>
-          <label for="birthdate"><h3>Choose your date of birth:</h3></label>
+        <div class="input-lottie">
+          <label for="birthdate"><h3 class="lottieH3">Pick your date of birth:</h3></label>
           <input type="date" id="birthdate" />
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player
@@ -30,21 +30,25 @@
           <div id="result"></div>
         </div>
         <div class="accordion-section" id="accordionSection">
-            <h3 id="accordionHeader">
-              What Life Path Number and Numerology mean?
-            </h3>
-            <p id="accordionContent">
-              Numerology is based on the idea that every number (and letter) has
-              its own unique energetic vibration. Numerology studies the way
-              these vibrations influence the story of your life and personality.
-              So when you figure out your life path number you can start to
-              uncover your destiny and the life lessons you will face along the
-              way.
-            </p>
+          <div class="accordion-div">
+            <h3>What Life Path Number and Numerology mean?</h3>
+            <img
+              id="accordionHeader"
+              src="./add.png"
+              alt="plus"
+            />
           </div>
+          <p id="accordionContent">
+            Numerology is based on the idea that every number (and letter) has
+            its own unique energetic vibration. Numerology studies the way these
+            vibrations influence the story of your life and personality. So when
+            you figure out your life path number you can start to uncover your
+            destiny and the life lessons you will face along the way.
+          </p>
+        </div>
       </div>
       <div class="input-box">
-        <label for="numerologyNumber">What's your numerology number:</label>
+        <label for="numerologyNumber">What's your Life Path Number?:</label>
         <select id="numerologyNumber">
           <option value="1">1</option>
           <option value="2">2</option>

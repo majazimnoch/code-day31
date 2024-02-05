@@ -1,92 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: rgb(63, 52, 57);
-    background-repeat: repeat;
-    background-size: 200% 200%;
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-repeat: repeat;
+  background-size: 200% 200%;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    max-height: 100vh;
-    width: 100%;
-    max-width: 400px;
-    min-height: 100vh;
-    padding: 30px 10px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  width: 100%;
+  max-width: 400px;
+  min-height: 100vh;
+  padding: 30px 10px;
+  gap: 20px;
 
-
-    @media  (min-width:1024px) {
-        flex-direction: row;
-        max-width: 700px;
-        align-items: stretch;
-    }
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    max-width: 700px;
+    align-items: stretch;
+  }
 }
 
 .text-box {
-    background-color: rgba(242, 244, 246, 0.832);
-    padding: 20px;
-    border-radius: 10px;
-    min-width: 60%;
+  background-color: rgba(243, 245, 247, 0.92);
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+
+  @media (min-width: 1024px) {
+  }
+}
+
+.input-lottie {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    gap: 10px;
+}
 
-    @media  (min-width:1024px) {
-        
-    }
+.lottieH3 {
+    color: #48100d;
 }
 
 .input-box {
-    background-color: rgba(240, 248, 255, 0.502);
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-width: 40%;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+  background-color: #500346c9;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 40%;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: rgba(243, 245, 247);
 
-    @media  (min-width:1024px) {
-       
-    }
+  @media (min-width: 1024px) {
+  }
 }
 
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff9a9e;
+  border: 1px #ff9a9e solid;
+  text-transform: uppercase;
+  transition: ease-in-out 0.5s;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: #48100d;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px #ff9a9e solid;
+}
+
+.input-box button:hover {
+  background-color: transparent;
+  border: 1px #ff9a9e solid;
+  color: rgba(243, 245, 247);
+}
 h1 {
-    font-size: 50px;
+  font-size: 50px;
+  color: #500346;
 }
-
 
 #accordionContent {
-    display: none;
+  display: none;
 }
 
 #accordionHeader {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 #accordionSection p {
-    display: none;
+  display: none;
 }
 
 #accordionSection.active p {
-    display: block;
+  display: block;
+}
+
+.accordion-div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.accordion-div h3 {
+text-decoration: underline;
+font-weight: 500;
+color: #48100d;
+}
+
+img {
+  width: 50px;
+  transition: ease-in-out 0.5s;
+  opacity: 1;
+}
+
+img:hover {
+  transform: rotate(90deg);
 }
