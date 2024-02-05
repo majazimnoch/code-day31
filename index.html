@@ -8,10 +8,27 @@
   </head>
   <body>
     <div class="container">
+      <div class="text-box">
+        <h1>Count your Number in Numerology</h1>
+        <h3>What's your Life Path Number?</h3>
+      </div>
+      <div class="input-box">
         <label for="birthdate">Choose your date of birth:</label>
-        <input type="date" id="birthdate">
+        <input type="date" id="birthdate" />
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://lottie.host/b8bc0393-3bb0-44c2-8cdd-b55dd02a163c/EezyPhn6gx.json"
+          background="##FFFFFF"
+          speed="1"
+          style="width: 200px; height: 200px"
+          loop
+          autoplay
+          direction="1"
+          mode="normal"
+        ></lottie-player>
         <button id="calculateBtn">Check your number</button>
         <div id="result"></div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
