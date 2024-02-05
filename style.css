@@ -84,9 +84,11 @@ body {
   border: none;
   border-radius: 5px;
   outline: 1px #ff9a9e solid;
-  padding: 15px 5px;
-  font-size: small;
+  padding: 25px 15px;
+  font-size: 16px;
   font-family: "Montserrat Alternates", sans-serif;
+  width: 100%;
+  color: #48100d;
 }
 
 .lottie-container {
