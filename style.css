@@ -58,6 +58,9 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
+  border: 1px rgb(11, 146, 45) solid;
+  min-height: 1000px;
+  margin-bottom: 50px;
 }
 
 .input-lottie {
@@ -153,6 +156,10 @@ h1 {
   display: block;
 }
 
+.accordion-section {
+  border: 1px red solid;
+}
+
 #accordionSection p {
   display: none;
 }
@@ -162,11 +169,12 @@ h1 {
   font-size: 14px;
 }
 
-.accordion-div {
+.accordion-header {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   margin-bottom: 20px;
+  border: 1px rgb(21, 58, 222) solid;
 }
 
 .accordion-div h3 {
