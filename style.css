@@ -58,8 +58,12 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
-  min-height: 1000px;
-  margin-bottom: 50px;
+
+  @media (min-width:1024px){
+    min-height: 800px;
+    margin-bottom: 50px ;
+  }
+  
 }
 
 .input-lottie {
